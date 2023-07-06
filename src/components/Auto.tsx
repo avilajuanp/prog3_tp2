@@ -36,6 +36,9 @@ export const AutoApp: React.FC = () => {
                         <strong>Marca: </strong> {auto.marca}, <strong>Modelo: </strong> {auto.modelo}, <strong>Potencia: </strong> {auto.potencia} HP, 
                         <strong>Velocidad Máxima: </strong> {auto.velocidadMax} km/h.
                         <br /><strong>Tiempo de Recorrido (100 kms): </strong> {auto.calcularTiempo(100).toFixed(2)} horas
+                        <br /><strong>Tiempo de Recorrido (200 kms): </strong> {auto.calcularTiempo(200).toFixed(2)} horas
+                        <br /><strong>Tiempo de Recorrido (500 kms): </strong> {auto.calcularTiempo(500).toFixed(2)} horas
+                        <br />
                     </li>
                 ))}
             </ul>
